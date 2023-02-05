@@ -10,7 +10,7 @@ describe('formatFullname', () => {
     expect(formatFullname(function () {})).to.equal('Error');
   });
 
-  it('should return an error if "fullName" arg length is 0', () => {
+  it('should return an error if "fullName" is empty string', () => {
     expect(formatFullname('')).to.equal('Error');
   });
   it('should return an error if "fullName" form is different than <firstname> <lastname>', () => {
